@@ -1,0 +1,29 @@
+{
+  "name": "SpringBreak2k16",
+  "homepage": "https://github.com/hamlim/TheWitness",
+  "authors": [
+    "hamlim <hamlim@rpi.edu>"
+  ],
+  "description": "A Spring Break Hack Week Project",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "puzzels",
+    "hacks",
+    "hackweek",
+    "Spring",
+    "Break"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1"
+  }
+}
