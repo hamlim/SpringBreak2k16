@@ -59,11 +59,27 @@ $(document).ready(function(){
                             etc....
                         ],
                         key_points: [
-                            [2,4]
+                            [2,4] (note this is only one point but key_points can have several points)
                         ]
                     }
                 */
-
+                let userpoints = external_solution.points;
+                let numchecks = this.solution_parameters.key_points.length;
+                let checked = 0;
+                for(let k=0; k<userpoints.length; k++){
+                    for(let j=0; j<numchecks; j++){
+                        if(userpoints[k] === this.solution_parameters.key_points[j]){
+                            //it hits one of the key points
+                            checked += 1;
+                        }
+                    }
+                }
+                if(checked === numchecks){
+                    /*
+                        user solution hit all the key points
+                        which means that the solution is correct
+                    */
+                }
             } else if (this.type === 'shape'){
 
             } else if (this.type === 'shadow'){
@@ -84,6 +100,23 @@ $(document).ready(function(){
             }
         }
     }
+    let params = {
+        // points: [
+        //     [1,1],
+        //     [1, 2],
+        //     [2, 2],
+        //     [2,3],
+        //     [2,4]
+        // ],
+        key_points: [
+            [2,3]
+        ]
+    };
 
-    let testBoard = new Board([4,4], [1,1], [2,3])
+    let testBoard = new Board([4,4], [1,1], [2,4], 'dot_in_path', '#85144b', params);
+    console.log(testBoard);
+
+    function init(){
+        var stage = new createjs.Stage("demoCanvas");
+    }
 });

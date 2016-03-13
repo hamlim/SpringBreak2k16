@@ -1,0 +1,49 @@
+.header,
+.footer {
+    height: 10vh;
+    line-height: 10vh;
+}
+a:not(.nolink) {
+    text-decoration: none;
+    color: black;
+    border-bottom: dashed 2px;
+    transition: 600ms;
+}
+a:not(.nolink):hover {
+    text-decoration: none;
+    color: #DDDDDD;
+    border-bottom: solid 2px;
+    transition: 600ms;
+}
+
+.nolink {
+    text-decoration: none;
+    color: black;
+}
+.nolink:hover {
+    text-decoration: none;
+    color: #393939;
+}
+.utils__hfix {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+
+.page {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.canvas {
+    background-color: white;
+    /*max-width: 50%;*/
+    width: 600px;
+    height: 600px;
+}
+
+.utils__bg_gray {
+    background-color: #eeeeee;
+}
