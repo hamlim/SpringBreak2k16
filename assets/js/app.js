@@ -116,7 +116,52 @@ $(document).ready(function(){
     let testBoard = new Board([4,4], [1,1], [2,4], 'dot_in_path', '#85144b', params);
     console.log(testBoard);
 
+    let stage, label, shape, oldX, oldY, size, color, canvas;
     function init(){
-        var stage = new createjs.Stage("demoCanvas");
+        //init stage for EaselJS
+        stage = new createjs.Stage("js-canvas");
+        stage.enableDOMEvents(true);
+
+        //canvas size/scale fix
+        canvas = document.getElementById('js-canvas');
+        canvas.width = canvas.scrollWidth;
+        canvas.height = canvas.scrollHeight;
+
+        size = 0;
+        color = "#DDDDDD";
+
+        stage.on("stagemousedown", function(event) {
+			size = 4;
+		});
+
+        stage.on("stagemousemove",function(evt) {
+    		if (oldX) {
+    			shape.graphics.beginStroke(color)
+    						  .setStrokeStyle(size, "round")
+    						  .moveTo(oldX, oldY)
+    						  .lineTo(evt.stageX, evt.stageY);
+    			stage.update();
+    		}
+			oldX = evt.stageX;
+			oldY = evt.stageY;
+		});
+
+		stage.update();
+
+        // stage.on("stagemousedown", function(evt) {
+        //     alert("the canvas was clicked at "+evt.stageX+","+evt.stageY);
+        // });
+        // stage.addEventListener('mousedown', mousedown, false);
+        //
+        // // Testing code
+        // var circle = new createjs.Shape();
+        // circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 50);
+        // circle.x = 100;
+        // circle.y = 100;
+        // stage.addChild(circle);
+        // console.log(stage);
+        // stage.update();
     }
+    init();
+
 });
