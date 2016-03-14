@@ -116,7 +116,7 @@ $(document).ready(function(){
     let testBoard = new Board([4,4], [1,1], [2,4], 'dot_in_path', '#85144b', params);
     console.log(testBoard);
 
-    let stage, label, shape, oldX, oldY, size, color, canvas;
+    let stage, shape, oldX, oldY, size, color, canvas;
     function init(){
         //init stage for EaselJS
         stage = new createjs.Stage("js-canvas");
