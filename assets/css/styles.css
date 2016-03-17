@@ -1,0 +1,40 @@
+.header {
+    height: 10vh;
+    line-height: 10vh;
+}
+
+.header--title {
+    padding: 0;
+}
+
+.page {
+    height: 80vh;
+}
+
+.form--fieldset {
+    border: none;
+}
+.form--input {
+    height: 4em;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: white;
+    border-bottom: dashed 5px #29D2E4;
+    transition: 500s;
+}
+.form--input:active,
+.form--input:focus {
+    border-bottom: solid 5px #29D2E4;
+    transition: 500s;
+}
+
+
+.footer {
+    height: 10vh;
+    line-height: 10vh;
+}
+.footer--text {
+    padding: 0;
+}

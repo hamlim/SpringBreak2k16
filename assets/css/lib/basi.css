@@ -1192,3 +1192,6 @@ code:before {
     border: solid 2px var(--clr-purple);
     transition: 300ms;
 }
+.btn--fill {
+    width: 100%;
+}

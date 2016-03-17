@@ -1,21 +1,19 @@
 {
   "name": "SpringBreak2k16",
-  "homepage": "https://github.com/hamlim/TheWitness",
+  "homepage": "https://github.com/hamlim/SpringBreak2k16",
   "authors": [
     "hamlim <hamlim@rpi.edu>"
   ],
-  "description": "A Spring Break Hack Week Project",
+  "description": "A small little Cover letter, Resume template generator",
   "main": "index.html",
   "moduleType": [],
   "keywords": [
-    "puzzels",
-    "hacks",
-    "hackweek",
-    "Spring",
-    "Break"
+    "template",
+    "cover-letter",
+    "resume",
+    "generator"
   ],
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -24,7 +22,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^2.2.1",
-    "EaselJS": "easeljs#^0.8.2"
+    "jquery": "^2.2.1"
   }
 }

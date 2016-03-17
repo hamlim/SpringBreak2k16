@@ -1,30 +1,40 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
 
-        <title>SpringBreak2k16</title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="./assets/css/lib/normalize.css">
-        <link rel="stylesheet" href="./assets/css/lib/basi.css">
-        <link rel="stylesheet" href="./assets/css/custom.css">
+        <title>Cover Letter Generator</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="assets/css/lib/normalize.min.css" />
+        <link rel="stylesheet" href="assets/css/lib/basi.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
 
         <!-- Scripts -->
         <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="./bower_components/EaselJS/lib/easeljs-0.8.2.min.js"></script>
         <script src="./assets/js/app.js"></script>
     </head>
-    <body class="utils__bg_gray">
-        <header class="header utilities__tac bg__clrs_green">
-            <a href="#!" class="nolink title"><h1 class="utils__hfix">#SBHW2k16</h1></a>
+    <body>
+        <header class="header utilities__tac bg__clr_blue">
+            <nav class="header--nav">
+                <h1 class="header--title">Cover Letter Generator</h1>
+            </nav>
         </header>
-        <main class="page utils__bg_gray" id="js-canvas-parent">
-            <canvas class="canvas" id="js-canvas">
-                Your browser doesn't support Canvas, please upgrade to experience this.
-            </canvas>
+        <main class="page utilities__niceText">
+            <h3>Cover Letter Generator:</h3>
+            <form class="form">
+                <fieldset class="form--fieldset">
+                    <input class="form--input js-input-company" type="text" placeholder="Company" tabindex="1" />
+                    <input class="form--input js-input-jobName" type="text" placeholder="Job" tabindex="2" />
+                    <input class="form--input js-input-link" type="text" placeholder="Link" tabindex="3" />
+                </fieldset>
+            </form>
+            <button class="btn--fill btn btn--primary" type="button" tabindex="4">Generate!</button>
         </main>
-        <footer class="footer utilities__tac bg__clrs_green">
-            <p class="footer__sublinks utils__hfix"><a href="./about" class="nolink">About</a> | <a href="https://twitter.com/immatthamlin" class="nolink">@immatthamlin</a></p>
+        <footer class="footer bg__clr_blue">
+            <p class="footer--text utilities__niceText utilities__tal">
+                &copy; 2016 Matt Hamlin
+            </p>
         </footer>
     </body>
 </html>
