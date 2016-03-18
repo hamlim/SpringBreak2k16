@@ -1,0 +1,17 @@
+@media print {
+    .print--noshow {
+        display: none;
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+    .print--page {
+        border-top: solid 5px black;
+        border-bottom: solid 5px black;
+        margin: 1in 1in;
+    }
+    .print-page--header {
+        width: 1.5in;
+    }
+    .print-page--footer
+}
